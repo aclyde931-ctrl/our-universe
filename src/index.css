@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.12);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.08);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heart-beat {
+  animation: heartBeat 2.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heart-beat {
+    animation: none;
+  }
+}
+@keyframes deleteModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

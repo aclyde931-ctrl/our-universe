@@ -1,0 +1,22 @@
+TOGETHER APP - CALL MESSAGES SETUP
+
+The Messenger-style call cards are already integrated into the project.
+
+Because you said you already ran the previous SQL, first try the app normally.
+Run SUPABASE_CALL_MESSAGES.sql only when the call columns or trigger are missing,
+or when completed calls do not create messages. The script is safe to rerun.
+
+To run the project:
+1. Open this couple-app folder in VS Code.
+2. Open the terminal.
+3. Run: npm install
+4. Run: npm run dev
+5. Open the Local URL shown by Vite.
+
+Added:
+- src/components/chat/CallMessage.jsx
+- call cards in src/pages/Chat.jsx
+- Voice/video, ended/missed/declined/failed states
+- Duration and timestamp
+- Call Again button
+- SUPABASE_CALL_MESSAGES.sql
